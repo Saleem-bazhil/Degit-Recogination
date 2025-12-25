@@ -27,7 +27,7 @@ x_train, x_test, y_train, y_test = train_test_split(
 )
 
 #train the model
-model = RandomForestClassifier()
+model = SVC()
 model.fit(x_train, y_train)
 
 y_pred = model.predict(x_test)
